@@ -89,6 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: const Icon(Icons.sync),
             onPressed: () async {
               await syncService.processQueue();
+              // ignore: use_build_context_synchronously
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text("Sync completed")),
               );
