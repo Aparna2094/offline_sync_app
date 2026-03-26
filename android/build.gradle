@@ -1,0 +1,32 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Some third-party plugins still read Flutter SDK versions from a `flutter.*` Gradle property.
+// The modern Flutter Android template provides these via the Flutter Gradle plugin only in the
+// app module. Propagate a minimal fallback to library subprojects so those plugins can compile.
+ext.flutter = [
+    compileSdkVersion: 34,
+    minSdkVersion: 23,
+    targetSdkVersion: 34,
+]
+subprojects { project ->
+    if (!project.hasProperty("flutter")) {
+        project.ext.flutter = rootProject.ext.flutter
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
