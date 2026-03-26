@@ -205,4 +205,4 @@ AI Prompt Log
 
 ##  Demo Video
 
-https://drive.google.com/file/d/1XGJKepNceM9wdqKdTUvow0r-BuQC3RnA/view?usp=sharing
+https://drive.google.com/file/d/1aaNbR-9LNpbEMS-nkMP9-YUQLOsl8sKu/view?usp=sharing
