@@ -1,16 +1,22 @@
-# offline_sync_app
+# Offline Sync Notes App
 
-A new Flutter project.
+## Features
+- Create notes offline
+- Sync with Firebase when online
+- Queue-based sync system
 
-## Getting Started
+## Tech Stack
+- Flutter
+- Hive (Local DB)
+- Firebase Firestore
 
-This project is a starting point for a Flutter application.
+## How to Run
+1. Clone repo
+2. Run `flutter pub get`
+3. Run app
 
-A few resources to get you started if this is your first Flutter project:
+## Demo Video
+https://drive.google.com/file/d/1XGJKepNceM9wdqKdTUvow0r-BuQC3RnA/view?usp=sharing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Author
+Your Name
